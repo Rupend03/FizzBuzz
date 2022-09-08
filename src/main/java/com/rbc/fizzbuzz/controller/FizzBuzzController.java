@@ -17,7 +17,7 @@ public class FizzBuzzController {
         fizzBuzzService.fizzBuzzWithoutState();
     }
 
-    @GetMapping(value = "next", produces = "application/json")
+    @GetMapping("next")
     public String next()
     {
         return fizzBuzzService.next().getCurrentStateFizzBuzzValue();
